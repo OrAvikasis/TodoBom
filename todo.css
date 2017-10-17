@@ -1,0 +1,7 @@
+ul#todoList {
+  list-style-type: none;
+}
+
+input.taskCheckbox:checked +label  { 
+  text-decoration: line-through;	
+}
