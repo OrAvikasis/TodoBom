@@ -3,20 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
+  <script src="https://use.fontawesome.com/7204a2acb8.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="todo.css">
   <script src="todo.js"></script>
   <title>Todo Bom</title>
 </head>
 <body>
+  <header>
+    <h1>ToDo Bom </h1>
+  </header>
+  <div id="main">
+    <form name="mission" id="taskForm">
+      <input type="text" name="mission" id="taskInput" placeholder="אז מה עושים?">
+      <input type="button" name="addMission" value="הוסף משימה" id="newMission" class="btn btn-outline-success">  
+    </form>
   
-  <form name="mission">
-    ?אז מה עושים <input type="text" name="mission" id="taskInput">
-    <input type="button" name="addMission" value="!הוסף משימה" id="newMission">  
-  </form>
-  
-  <ul id="todoList">
+    <ul id="todoList">
+      
+    </ul>
+  </div>
     
-  </ul>
-  
 </body>
 </html>
