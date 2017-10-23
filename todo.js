@@ -10,6 +10,7 @@ var todoJs = function () {
 
     var checkboxTemplate = "<input class='taskCheckbox list-item-component' type='checkbox'>"
 
+
     var deleteButton = "<i class='fa fa-trash delete-button list-item-component' aria-hidden='true'></i>"
 
     var addNewTask = function(){
@@ -38,6 +39,8 @@ var todoJs = function () {
         }
     });
 
+   //  sortable.create(todoList);
+
     todoList.addEventListener('click', function(event) {
     if (event.target.className.indexOf('delete-button') > -1) event.target.parentElement.remove();
     });
@@ -51,4 +54,5 @@ if (document.readyState === "complete" ||
   document.addEventListener("DOMContentLoaded", todoJs);
 }
 
-
+var reOrder = document.getElementById("todoCard");
+Sortable.create(reOrder);

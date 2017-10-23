@@ -23,11 +23,6 @@ p, h1, h2, h3, h4, button, input, label {
 
 ul#todoList {
     list-style-type: none;
-    background-color: #eeeeee;
-    width: 50%;
-    border-right: 1px solid #aaaaaa;
-    border-top: 1px solid #aaaaaa;
-    padding: 15px;  
 }
 
 input.taskCheckbox:checked +label  { 
@@ -69,16 +64,19 @@ h1 {
 } 
 
 form {
-    background-color: #eeeeee;
-    width: 50%;
     margin: 20px 0;
-    border-right: 1px solid #aaaaaa;
-    border-top: 1px solid #aaaaaa;
-    padding: 15px;
     display: flex;
 }
 
 #taskInput {
     flex: 1;
     margin-left: 10px; 
+}
+
+.todoCard {
+    background-color: #eeeeee;
+    width: 50%;
+    border-right: 1px solid #aaaaaa;
+    border-top: 1px solid #aaaaaa;
+    padding: 15px;
 }
